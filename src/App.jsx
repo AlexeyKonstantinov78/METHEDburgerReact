@@ -1,5 +1,6 @@
 import { Catalog } from "./components/Catalog/Catalog";
 import { Container } from "./components/Container/Container";
+import { Footer } from "./components/Footer/Footer";
 import { Header } from "./components/Header/Header";
 import { Navigation } from "./components/Navigation/Navigation";
 
@@ -11,7 +12,7 @@ export const App = () => {
         <Navigation />
         <Catalog />
       </main>
-      <footer></footer>
+      <Footer />
     </>
   );
 };
