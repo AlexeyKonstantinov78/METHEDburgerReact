@@ -4,7 +4,7 @@ import logo from '../../assets/img/logo.svg';
 
 export const Header = () => (
   <header className={style.header}>
-    <Container className="header__container">      
+    <Container className={style.header__container}>      
         <img className={style.header__logo} src={logo} alt="Логотип YourMeal" />
         <div className={style.header__wrapper}>
           <h1 className={style.header__title}>
