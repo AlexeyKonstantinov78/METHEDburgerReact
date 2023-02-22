@@ -1,3 +1,3 @@
 # Учебный проект METHED React Burger 
 
-* React (Vite) - Redux
+* React (Vite) - Redux..
