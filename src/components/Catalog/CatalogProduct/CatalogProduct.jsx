@@ -1,23 +1,24 @@
 import style from './CatalogProduct.module.css';
+import { API_URI } from '../../../const';
 
-export const CatalogProduct = (props) => {
+export const CatalogProduct = ({ item }) => {
   return (
     <article className={style.product}>
       <img
-        src='../../assets/img/photo-5.jpg'
-        alt={props.title}
+        src={`${API_URI}/${item.image}`}
+        alt={item.title}
         className={style.product__image}
       />
 
       <p className={style.product__price}>
-        689<span className={style.currency}>₽</span>
+        {item.price}<span className={style.currency}>₽</span>
       </p>
 
       <h3 className={style.product__title}>
-        <button className={style.product__detail}>{props.title}</button>
+        <button className={style.product__detail}>{item.title}</button>
       </h3>
 
-      <p className={style.product__weight}>520г</p>
+      <p className={style.product__weight}>{item.weight}г</p>
 
       <button className={style.product__add} type='button'>
         Добавить
