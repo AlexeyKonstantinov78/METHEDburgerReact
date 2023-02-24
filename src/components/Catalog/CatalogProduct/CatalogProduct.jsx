@@ -6,7 +6,6 @@ import { addProduct } from '../../../store/order/orderSlice';
 export const CatalogProduct = ({ item }) => {
   const dispatch = useDispatch();
 
-
   return (
     <article className={style.product}>
       <img
